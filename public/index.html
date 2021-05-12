@@ -8,10 +8,114 @@
     <title>Informe Proyecto Final</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://img.icons8.com/bubbles/2x/monitor.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
 </head>
 
-<body style="background-image: url(./img/what-the-hex.png)">
+<body class="text-gray-800" style="background-image: url(./img/what-the-hex.png)">
 
+    <div class="relative pt-16 pb-64 flex content-center items-center justify-center" style="min-height: 75vh;">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover">
+            <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                    <div class="pr-12">
+                        <h1 class="text-white font-semibold text-5xl">🤖</h1>
+                        <h1 class="text-white font-semibold text-5xl">
+                            Informe de Proyecto Redes
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-300">
+                            Esta página presenta el informe de proyecto de la materia <strong>Redes de
+                                Datos</strong> dirigida por el Ing. Frey Alejandro Santamaría Buitrago.
+                            Se presenta el proceso de instalación y configuración de <strong>Servidor DHCP</strong>,
+                            <strong>Servidor DNS</strong> y <strong>Servidor Web</strong>
+                            <br>
+                            El presente informe es desarrollado por:
+                            <br>
+                            <strong>BLANCO MENDOZA</strong> Juan José
+                            <br>
+                            <strong>SEPULVEDA</strong> Juan Camilo
+                            <br>
+                            <strong>VARGAS CARDENAS</strong> Felipe Santiago
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+            style="height: 70px;">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </div>
+    <section class="pb-20 -mt-44">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center ">
+                    <a href="dhcp.html">
+                        <div
+                            class="transition-transform ease-in-out duration-700 transform hover:-translate-y-1 hover:scale-110 relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg ">
+                            <div class="px-4 py-5 flex-auto">
+                                <div
+                                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <h6 class="text-xl font-semibold">Servidor DHCP</h6>
+                                <p class="mt-2 mb-4 text-gray-600">
+                                    Documentación de la instalación, configuración y montaje para un <strong>Servidor
+                                        DHCP</strong> 🤖 en máquina virtual de Windows Server 2019
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="w-full md:w-4/12 px-4 text-center">
+                    <a href="dns.html">
+                        <div
+                            class="transition-transform ease-in-out duration-700 transform hover:-translate-y-1 hover:scale-110 relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                                <div
+                                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h6 class="text-xl font-semibold">Servidor DNS</h6>
+                                <p class="mt-2 mb-4 text-gray-600">
+                                    Documentación de la instalación, configuración y montaje para un <strong>Servidor
+                                        DNS</strong> 🤖 en máquina virtual de Windows Server 2019
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                    <a href="web.html">
+                        <div
+                            class="transition-transform ease-in-out duration-700 transform hover:-translate-y-1 hover:scale-110 relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                            <div class="px-4 py-5 flex-auto">
+                                <div
+                                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                                    <i class="fas fa-fingerprint"></i>
+                                </div>
+                                <h6 class="text-xl font-semibold">Servidor Web</h6>
+                                <p class="mt-2 mb-4 text-gray-600">
+                                    Documentación de la instalación, configuración y montaje para un <strong>Servidor
+                                        Web</strong> 🤖 en máquina virtual de Ubuntu 20.04 LTS
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
