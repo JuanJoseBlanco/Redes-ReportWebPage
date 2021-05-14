@@ -15,7 +15,7 @@
 
 <body class="text-gray-800" style="background-image: url(./img/what-the-hex.png)">
 
-    <div class="relative pt-16 pb-96 flex content-center items-center justify-center" style="min-height: 75vh;">
+    <div class="relative pb-96 flex content-center items-center justify-center" style="min-height: 75vh;">
         <div class="absolute top-0 w-full h-full bg-center bg-cover">
             <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
         </div>
@@ -46,7 +46,62 @@
             </svg>
         </div>
     </div>
-    
+    <section class="pb-20 -mt-96">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="lg:pt-12 pt-6 w-full px-4 text-center">
+                    <div class="relative flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg flex ">
+                        <div class="px-4 py-5 flex-auto">
+                            <h1 class="text-4xl font-semibold mb-8">Instalación y configuración del Servidor DHCP</h1>
+                            <p class="text-left text-2xl font-semibold">💥 Paso 1</p>
+                            <p class="text-left my-5 ml-10 text-lg">Se parte desde la máquina virtual instalada y
+                                configurada. En este caso, se hace uso de una máquina virtual de Ubuntu Server para la
+                                configuración del Servidor Web.</p>
+                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/WEB/SO9.PNG" alt="">
+                            <p class="text-left text-2xl font-semibold">💥 Paso 2</p>
+                            <p class="text-left my-5 ml-10 text-lg">Desde este punto, se instalan las herramientas
+                                necesarias para la configuración del Servidor Web. <br><strong> <a
+                                        class="underline text-green-600" href="https://nodejs.org/es/"
+                                        target="_blank">Node.js </a></strong> como
+                                framework de entorno de ejecución para JavaScript, <strong><a
+                                        class="underline text-blue-600" href="https://git-scm.com/"
+                                        target="_blank">Git</a> </strong> para acceder al código del Servidor
+                                configurado en un repositorio y <strong> <a class="underline text-yellow-600"
+                                        href="https://www.npmjs.com/" target="_blank">npm</a> </strong> como gestor de
+                                paquetes de
+                                node, el cual será utilizado para la instalación de dependencias de nodejs. <br>
+                                Para ello, se hace uso de los siguientes comandos: <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">sudo apt install nodejs</span>
+                                para la instalación de nodejs (de esta manera se instala npm igualmente) y<br> <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">sudo apt-get install
+                                    git-all</span> para Git
+                                <br>
+                                <strong>⭕ Node: </strong>
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB1.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg font-semibold">Verificación de versión de node
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB2.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg"><strong>⭕ Git</strong>
+                                <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB3.PNG" alt="">
+                            </p>
+                            <p class="text-left text-2xl font-semibold">💥 Paso 3</p>
+                            <p class="text-left my-5 ml-10 text-lg">Luego de tener instalados Node.js y Git, se crea el
+                                directorio que contendrá la carpeta con los archivos del servidor.
+                                Sin embargo, esta carpeta será traída del repositorio Git que contiene la configuración
+                                del servidor y explicaremos a continuación. Para ello, ejecutamos el comando <br> <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">git clone url_repositorio
+                                    git-all</span>. En el campo url_repositorio ubicamos la URL del repositorio donde se
+                                aloja la configuración.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
