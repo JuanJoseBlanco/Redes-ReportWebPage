@@ -72,9 +72,11 @@
                                 node, el cual será utilizado para la instalación de dependencias de nodejs. <br>
                                 Para ello, se hace uso de los siguientes comandos: <span
                                     class="bg-gray-200 p-1 font-semibold rounded-3xl">sudo apt install nodejs</span>
-                                para la instalación de nodejs (de esta manera se instala npm igualmente) y<br> <span
+                                para la instalación de nodejs, <span
                                     class="bg-gray-200 p-1 font-semibold rounded-3xl">sudo apt-get install
-                                    git-all</span> para Git
+                                    git-all</span> para Git y <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">sudo apt install npm</span> para
+                                npm
                                 <br>
                                 <strong>⭕ Node: </strong>
                             </p>
@@ -83,16 +85,112 @@
                             </p>
                             <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB2.PNG" alt="">
                             <p class="text-left my-5 ml-10 text-lg"><strong>⭕ Git</strong>
-                                <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB3.PNG" alt="">
                             </p>
-                            <p class="text-left text-2xl font-semibold">💥 Paso 3</p>
-                            <p class="text-left my-5 ml-10 text-lg">Luego de tener instalados Node.js y Git, se crea el
-                                directorio que contendrá la carpeta con los archivos del servidor.
-                                Sin embargo, esta carpeta será traída del repositorio Git que contiene la configuración
-                                del servidor y explicaremos a continuación. Para ello, ejecutamos el comando <br> <span
-                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">git clone url_repositorio
-                                    git-all</span>. En el campo url_repositorio ubicamos la URL del repositorio donde se
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB3.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg"><strong>⭕ npm</strong>
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/NPM.PNG" alt="">
+                            <p class="text-left text-2xl font-semibold">💥 Paso 3: Configuración del servidor web</p>
+                            <p class="text-left my-5 ml-10 text-lg"> Para configurar y ejecutar el servidor web, se crea
+                                una carpeta o directorio donde se alojarán los archivos necesarios para su
+                                configuración.
+                                Y desde este directorio, se ejecuta el comando <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">npm init -y</span>, que da inicio
+                                a un archivo <strong>package.json</strong> donde podremos configurar dependencias del
+                                servidor. <br>
+                                Cabe aclarar que el servidor puede ser codificado en una máquina física, puesto que la
+                                virtual solo es una línea de comandos y sería más dfícil su codificación, y luego
+                                subirla a un repositorio github que será clonado en la máquina virtual y ejecutado desde
+                                allí.
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB5.PNG" alt="">
+                            <p class="text-left text-2xl font-semibold">💥 Paso 4: Instalación de dependencias</p>
+                            <p class="text-left my-5 ml-10 text-lg"> Teniendo el archivo <strong>package.json</strong>
+                                podemos proceder a instalar las dependencias necesarias para la configuración del
+                                Servidor Web. En este caso la dependencia utilizada sera <strong><a
+                                        class="underline text-purple-600" href="https://expressjs.com/es/"
+                                        target="_blank">Express</a></strong>, que actúa como infraestructura de
+                                aplicaciones web para Node.js. <br>
+                                Lo hacemos mediante el comando <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">npm install --save expres</span>
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB6.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg"> Si navegamos por el directorio del proyecto,
+                                veremos una carpeta <strong>node_modules</strong> y un archivo
+                                <strong>package-lock.json</strong>. Estos archivos son los necesarios para la
+                                configuración de dependencias y modulos de node.
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB7.PNG" alt="">
+                            <p class="text-left text-2xl font-semibold">💥 Paso 5: Codificación del servidor</p>
+                            <p class="text-left my-5 ml-10 text-lg"> Para este fin utilizaremos el editor de código
+                                VSCode. Por lo tanto, abrimos la carpeta del proyecto en el respectivo editor. <br>
+                                Una vez en el editor, debemos crear un archivo <strong>index.js</strong>
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB8.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg"> En este archivo, escribiremos el código necesario
+                                para correr el servidor.
+                                Con fin de probarlo, haremos el típico ejemplo Hola Mundo y probaremos el servidor en la
+                                máquina local.
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB9.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg"> Luego de tener el código, pondremos a ejecutar el
+                                servidor con el comando <span class="bg-gray-200 p-1 font-semibold rounded-3xl">node
+                                    index.js</span>
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB10.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg"> Como podemos ver la consola nos indica que el
+                                servidor está corriendo en la dirección <span
+                                    class="bg-black p-1 text-white font-semibold rounded-3xl">localhost:3000</span>, si
+                                consultamos dicha dirección en el navegador, obtendremos como respuesta:
+                            </p>
+                            <img class=" mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB11.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg"> De esta manera, vemos como nuestro Servidor Web
+                                está siendo ejecutado correctamente.
+                            </p>
+                            <p class="text-left text-2xl font-semibold">💥 Paso 6: Ejecución del servidor en máquina
+                                virtual</p>
+                            <p class="text-left my-5 ml-10 text-lg"> Una vez que vimos como el servidor web está siendo
+                                ejecutado en la máquina local, haremos su ejecución en una máquina virtual para ser
+                                consultado desde un cliente virtualizado.
+                                Para ello, haremos uso de la herramienta Github donde se encuentra almacenada la carpeta
+                                del proyecto y donde a su vez está montada la página web que presenta el informe del
+                                mismo.
+                                Por lo tanto, ejecutamos el comando <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">git clone url_repositorio</span>.
+                                En el campo url_repositorio ubicamos la URL del repositorio donde se
                                 aloja la configuración.
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB4.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg">El directorio <span
+                                    class="text-blue-700 p-1 font-semibold rounded-3xl">Redes-ReportWebPage</span>
+                                contiene la información del servidor y páginas web creados.
+                            </p>
+                            <p class="text-left my-5 ml-10 text-lg">Posterior a la ejecución puntual, la máquina virtual
+                                debe conocer las dependencias que se usaron para la creación del servidor. Para ello,
+                                desde la raíz del proyecto, ejecutamos el comando <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">npm install</span> que se encarga
+                                de instalar las dependencias alojadas en el archivo <strong>package.json</strong>
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB12.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg">A su vez, necesitamos conocer la dirección IP de la
+                                máquina en la que está corriendo el servidor para poder acceder a el desde una máquina
+                                externa. Para ello, ejecutamos el comando <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">ifconfig</span>. En caso tal de
+                                que nuestra máquina no cuente con el comando, podemos instalarlo mediante <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">sudo apt install net-tools</span>
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB13.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg">Allí, se aprecia que la dirección IP de nuestra
+                                máquina virtual es <strong>192.168.1.168</strong>. <br>
+                            </p>
+                            <p class="text-left my-5 ml-10 text-lg">El servidor será ejecutado mediante un comando que
+                                fue especificado en el archivo <strong>package.json</strong> y es <span
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">npm run start</span>. <br>
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB14.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg">De esta manera, nuestro servidor web está corriendo
+                                y listo para ser consultado desde el navegador de un cliente, consultando
+                                <strong>192.168.1.168</strong>. <br>
                             </p>
                         </div>
 
