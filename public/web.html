@@ -52,7 +52,7 @@
                 <div class="lg:pt-12 pt-6 w-full px-4 text-center">
                     <div class="relative flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg flex ">
                         <div class="px-4 py-5 flex-auto">
-                            <h1 class="text-4xl font-semibold mb-8">Instalación y configuración del Servidor DHCP</h1>
+                            <h1 class="text-4xl font-semibold mb-8">Instalación y configuración del Servidor Web</h1>
                             <p class="text-left text-2xl font-semibold">💥 Paso 1</p>
                             <p class="text-left my-5 ml-10 text-lg">Se parte desde la máquina virtual instalada y
                                 configurada. En este caso, se hace uso de una máquina virtual de Ubuntu Server para la
@@ -185,21 +185,48 @@
                             </p>
                             <p class="text-left my-5 ml-10 text-lg">El servidor será ejecutado mediante un comando que
                                 fue especificado en el archivo <strong>package.json</strong> y es <span
-                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">npm run start</span>. <br>
+                                    class="bg-gray-200 p-1 font-semibold rounded-3xl">npm run start</span>. Este comando
+                                equivale a ejecutar <span class="bg-gray-200 p-1 font-semibold rounded-3xl">node
+                                    index.js</span> por lo que pueden usarse cualquiera de los dos indistintamente. <br>
                             </p>
                             <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB14.PNG" alt="">
                             <p class="text-left my-5 ml-10 text-lg">De esta manera, nuestro servidor web está corriendo
                                 y listo para ser consultado desde el navegador de un cliente, consultando
-                                <strong>192.168.1.168</strong>. <br>
+                                <strong>192.168.1.168:3000</strong>. <br>
                             </p>
-                        </div>
+                            <p class="text-left text-2xl font-semibold">💥 Paso 7: Consulta del servidor web desde un
+                                cliente virtualizado</p>
+                            <p class="text-left my-5 ml-10 text-lg">Para realizar este último paso, se hace uso de una
+                                máquina virtual de Ubuntu pero en su versión escritorio. Allí, se accede al navegador, y
+                                se
+                                consulta la url: <strong>192.168.1.168:3000</strong>.
+                                Obtenemos el siguiente resultado
+                            </p>
+                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/WEB/WEB15.PNG" alt="">
+                            <p class="text-left my-5 ml-10 text-lg">De esta manera, el servidor web está listo y
+                                corriendo de manera correcta para ser consultado por los usuarios a través de su
+                                dirección IP y puerto.
+                            </p>
+                            <p class="text-left my-5 ml-10 text-4xl">🥳
+                            </p>
 
+                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
+
     </section>
+    <div class="fixed z-30 bottom-0 right-0 mr-6 mb-6">
+        <a id="back2Top" href="#" class="text-black bg-blue-800 bg-opacity-50 rounded-md">
+            <span class="hidden">Back to Top</span>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" class="h-10 w-10">
+                <path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+            </svg>
+        </a>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
