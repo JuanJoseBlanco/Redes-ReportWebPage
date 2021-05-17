@@ -1,101 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servidor DHCP 🤖</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="https://img.icons8.com/bubbles/2x/monitor.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://img.icons8.com/bubbles/2x/monitor.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+  </head>
 
-<body class="text-gray-800" style="background-image: url(./img/what-the-hex.png)">
-
-    <div class="relative pt-16 pb-96 flex content-center items-center justify-center" style="min-height: 75vh;">
-        <div class="absolute top-0 w-full h-full bg-center bg-cover">
-            <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
-        </div>
-        <div class="container relative mx-auto">
-            <div class="items-center flex flex-wrap">
-                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                    <div class="pr-12">
-                        <div
-                            class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h1 class="text-white font-semibold text-5xl">
-                            Servidor DHCP 🤖
-                        </h1>
-                        <p class="mt-4 text-lg text-gray-300">
-                            Instalación y configuración de <strong>Servidor DHCP</strong>
-                        </p>
-
-                    </div>
-                </div>
+  <body
+    class="text-gray-800"
+    style="background-image: url(./img/what-the-hex.png)"
+  >
+    <div
+      class="
+        relative
+        pt-16
+        pb-96
+        flex
+        content-center
+        items-center
+        justify-center
+      "
+      style="min-height: 75vh"
+    >
+      <div class="absolute top-0 w-full h-full bg-center bg-cover">
+        <span
+          id="blackOverlay"
+          class="w-full h-full absolute opacity-75 bg-black"
+        ></span>
+      </div>
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <div
+                class="
+                  text-white
+                  p-3
+                  text-center
+                  inline-flex
+                  items-center
+                  justify-center
+                  w-12
+                  h-12
+                  mb-5
+                  shadow-lg
+                  rounded-full
+                  bg-red-400
+                "
+              >
+                <i class="fas fa-server"></i>
+              </div>
+              <h1 class="text-white font-semibold text-5xl">
+                Servidor DHCP 🤖
+              </h1>
+              <p class="mt-4 text-lg text-gray-300">
+                Instalación y configuración de <strong>Servidor DHCP</strong>
+              </p>
             </div>
+          </div>
         </div>
-        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-            style="height: 70px;">
-            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
-                <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
-        </div>
+      </div>
+      <div
+        class="
+          top-auto
+          bottom-0
+          left-0
+          right-0
+          w-full
+          absolute
+          pointer-events-none
+          overflow-hidden
+        "
+        style="height: 70px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
     </div>
     <section class="pb-20 -mt-96">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap">
-                <div class="lg:pt-12 pt-6 w-full px-4 text-center">
-                    <div class="relative flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg flex ">
-                        <div class="px-4 py-5 flex-auto">
-                            <h1 class="text-4xl font-semibold mb-8">Instalación y configuración del Servidor DHCP</h1>
-                            <p class="text-left text-2xl font-semibold">💥 Paso 1</p>                            
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DHCP/DHCP 0.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 2.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 0.1.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 1.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 3.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 4.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 5.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 6.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 7.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 8.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 9.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 10.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 11.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 12.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 13.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 14.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 15.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 16.PNG" alt="">
-                            <img class="mx-auto my-5 w-1/2 h-1/2" src="./img/DHCP/DHCP 17.PNG" alt="">                            
-                            
-                            
-                           
-                            <p class="text-left my-5 ml-10 text-4xl">🥳
-                            </p>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="lg:pt-12 pt-6 w-full px-4 text-center">
+            <div
+              class="
+                relative
+                flex-col
+                min-w-0
+                break-words
+                bg-white
+                w-full
+                mb-8
+                shadow-lg
+                rounded-lg
+                flex
+              "
+            >
+              <div class="px-4 py-5 flex-auto">
+                <h1 class="text-4xl font-semibold mb-8">
+                  Instalación y configuración del Servidor DHCP
+                </h1>
+                <p class="text-left text-2xl font-semibold">💥 Paso 1</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Luego de tener instalado el SO Windows Server 2019 en la
+                  máquina virtual se verifica que la configuración de red se
+                  encuentre en los valores <strong>Red interna</strong>
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 0.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 2</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Accedemos a la configuración de red del sistema operativo y
+                  asignamos la dirección IP de forma estática. Para nuestro caso
+                  <strong>192.168.100.2</strong> para posteriormente tener un
+                  rango de direcciones completo. La máscara de red se asigna de
+                  la misma manera y establecemos la puerta de enlace
+                  predeterminada. También configuramos las direcciones de
+                  servidor DNS, las cuales pueden ser configuradas a voluntad
+                  del usuario dependiendo los DNS que desee utilizar.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 2.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 3</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Ahora verificamos que los cambios hayan sido aplicados
+                  correctamente con el comando
+                  <span class="bg-gray-200 p-1 font-semibold rounded-3xl"
+                    >ipconfig</span
+                  >
+                  desde la terminal de comandos del sistema operativo.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 0.1.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 4</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Nos ubicamos en el administrador del servidor y procederemos a
+                  configurar este servidor local añadiendo un nuevo rol como se
+                  muestra a continuación.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 1.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 5</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Se instala o añade un nuevo rol para lo que seleccionamos la
+                  opción
+                  <strong>Instalación basada en características o roles</strong>
+                  y hacemos clic en Siguiente.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 3.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 6</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Para nuestro caso, seleccionamos el servidor con nombre
+                  <strong>WIN-Q7LNPA2IIGO</strong> que es donde queremos añadir
+                  nuestro nuevo rol el cual nos permitirá asignar direcciones IP
+                  de manera dinámica.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 4.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 7</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Ahora procedemos a buscar el rol
+                  <strong>Servidor DHCP</strong> y seleccionarlo y hacemos clic
+                  en Siguiente
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 5.PNG"
+                  alt=""
+                />
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 6.PNG"
+                  alt=""
+                />
+                <p class="text-left my-5 ml-10 text-lg">
+                  Desde la siguiente ventana, confirmamos la instalación del
+                  rol.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 7.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 8</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Ahora se configura el rol recientemente instalado dando clic
+                  en la banderita o directamente en la opción llamada
+                  <strong>DHCP</strong>
+                </p>
 
-                        </div>
-                    </div>
-
-                </div>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 8.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 9</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  En esta ventana se aprecia toda la configuración que brinda el
+                  rol DHCP y vamos a comenzar por agregar un nuevo ámbito dando
+                  clic derecho sobre la opción <strong>IPv4</strong>
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 9.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 10</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Ahora asignamos un nuevo nombre a decisión propia y una
+                  descripción que permita identificar de manera rápida el ámbito
+                  que estamos creando.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 10.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 11</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Luego configuramos un intervalo de direcciones IP que va a ser
+                  capaz de asignar nuestro DHCP a los distintos dispositivos que
+                  se conecten a este servidor. Además se establece la máscara de
+                  subred y su respectiva longitud. Hacemos clic en Siguiente
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 11.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 12</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  A continuación si se desea pueden agregarse intervalos de
+                  direcciones IP que estén excluidas del servidor. O en su
+                  defecto, si deseamos excluir una sola dirección en concreto.
+                  Para nuestro caso simplemente daremos clic en Siguiente sin
+                  excluir ningún tipo de dirección IP
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 12.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 13</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  En el siguiente paso se configura la duración de la concesión,
+                  es decir, cuánto tiempo puede un cliente usar la dirección IP
+                  en este ámbito. Para nuestro caso lo dejaremos por defecto y
+                  haremos clic en Siguiente
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 13.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 14</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Luego agregamos la puerta de enlace que había sido configurada
+                  anteriormente con la dirección <strong>192.168.100.1</strong>.
+                  Damos clic en Agregar y luego dar clic en Siguiente hasta
+                  aceptar la opción
+                  <strong>Activar este ámbito ahora</strong> sin ninguna
+                  configuración adicional.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 14.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 15</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  De esta manera, procedemos a dar clic derecho en la opción
+                  <strong>IPv4</strong> y reiniciamos el servidor. Luego de
+                  esto, nuestro servidor DHCP quedará instalado y configurado
+                  para ser utilizado.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 15.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">
+                  💥 Visualización y conexión desde Windows Client al servidor
+                  DHCP instalado y configurado.
+                </p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Primero revisamos la configuración de red de la máquina
+                  cliente con sistema operativo Windows 10 y verificamos que se
+                  encuentre en el mismo segmento de red de nuestra máquina
+                  servidor donde se está ejecutando el servidor DHCP. <br />
+                  Si esto coincide, procedemos a verificar que se esté
+                  recibiendo la dirección ip de manera dinámica y confirmamos
+                  esta configuración.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 16.PNG"
+                  alt=""
+                />
+                <p class="text-left my-5 ml-10 text-lg">
+                  Luego, procedemos a acceder a la terminal de comandos del
+                  sistema operativo y verificamos que nuestra máquina haya
+                  recibido la dirección IP de acuerdo a la configuración de
+                  nuestro servidor DHCP.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DHCP/DHCP 17.PNG"
+                  alt=""
+                />
+                <p class="text-left my-5 ml-10 text-lg">
+                  En caso de que no se haya asignado la dirección IP
+                  correctamente podemos reiniciar la máquina para que efectúe
+                  las configuraciones de manera correcta.
+                </p>
+                <p class="text-left my-5 ml-10 text-4xl">🥳</p>
+              </div>
             </div>
+          </div>
         </div>
-
+      </div>
     </section>
     <div class="fixed z-30 bottom-0 right-0 mr-6 mb-6">
-        <a id="back2Top" href="#" class="text-black bg-blue-800 bg-opacity-50 rounded-md">
-            <span class="hidden">Back to Top</span>
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" class="h-10 w-10">
-                <path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
-            </svg>
-        </a>
+      <a
+        id="back2Top"
+        href="#"
+        class="text-black bg-blue-800 bg-opacity-50 rounded-md"
+      >
+        <span class="hidden">Back to Top</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          viewBox="0 0 24 24"
+          class="h-10 w-10"
+        >
+          <path
+            fill="currentColor"
+            d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+          />
+        </svg>
+      </a>
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
