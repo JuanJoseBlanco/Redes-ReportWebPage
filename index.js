@@ -6,7 +6,7 @@ const port = 3000;
 
 app.use("/", express.static(__dirname + "/public"));
 
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
   res.send('Servidor test corriendo!')
 })
 
