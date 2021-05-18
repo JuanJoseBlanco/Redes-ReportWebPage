@@ -1,96 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servidor DNS 🤖</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="https://img.icons8.com/bubbles/2x/monitor.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://img.icons8.com/bubbles/2x/monitor.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+  </head>
 
-<body class="text-gray-800" style="background-image: url(./img/what-the-hex.png)">
-
-    <div class="relative pt-16 pb-96 flex content-center items-center justify-center" style="min-height: 75vh;">
-        <div class="absolute top-0 w-full h-full bg-center bg-cover">
-            <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
-        </div>
-        <div class="container relative mx-auto">
-            <div class="items-center flex flex-wrap">
-                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                    <div class="pr-12">
-                        <div
-                            class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h1 class="text-white font-semibold text-5xl">
-                            Servidor DNS 🤖
-                        </h1>
-                        <p class="mt-4 text-lg text-gray-300">
-                            Instalación y configuración de <strong>Servidor DNS</strong>
-                        </p>
-
-                    </div>
-                </div>
+  <body
+    class="text-gray-800"
+    style="background-image: url(./img/what-the-hex.png)"
+  >
+    <div
+      class="
+        relative
+        pt-16
+        pb-96
+        flex
+        content-center
+        items-center
+        justify-center
+      "
+      style="min-height: 75vh"
+    >
+      <div class="absolute top-0 w-full h-full bg-center bg-cover">
+        <span
+          id="blackOverlay"
+          class="w-full h-full absolute opacity-75 bg-black"
+        ></span>
+      </div>
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <div
+                class="
+                  text-white
+                  p-3
+                  text-center
+                  inline-flex
+                  items-center
+                  justify-center
+                  w-12
+                  h-12
+                  mb-5
+                  shadow-lg
+                  rounded-full
+                  bg-blue-400
+                "
+              >
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h1 class="text-white font-semibold text-5xl">Servidor DNS 🤖</h1>
+              <p class="mt-4 text-lg text-gray-300">
+                Instalación y configuración de <strong>Servidor DNS</strong>
+              </p>
             </div>
+          </div>
         </div>
-        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-            style="height: 70px;">
-            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
-                <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
-        </div>
+      </div>
+      <div
+        class="
+          top-auto
+          bottom-0
+          left-0
+          right-0
+          w-full
+          absolute
+          pointer-events-none
+          overflow-hidden
+        "
+        style="height: 70px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
     </div>
 
     <section class="pb-20 -mt-96">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap">
-                <div class="lg:pt-12 pt-6 w-full px-4 text-center">
-                    <div class="relative flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg flex ">
-                        <div class="px-4 py-5 flex-auto">
-                            <h1 class="text-4xl font-semibold mb-8">Instalación y configuración del Servidor DHCP</h1>
-                            <p class="text-left text-2xl font-semibold">💥 Paso 1</p>                            
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 1.PNG" alt="">}
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 2.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 3.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 4.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 5.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 6.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 7.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 8.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 9 directa.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 9 inversa.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 10.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 11.PNG" alt="">
-                            <img class="mx-auto my-5  w-1/2 h-1/2" src="./img/DNS/DNS 12.PNG" alt="">
-                           
-                            <p class="text-left my-5 ml-10 text-4xl">🥳
-                            </p>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="lg:pt-12 pt-6 w-full px-4 text-center">
+            <div
+              class="
+                relative
+                flex-col
+                min-w-0
+                break-words
+                bg-white
+                w-full
+                mb-8
+                shadow-lg
+                rounded-lg
+                flex
+              "
+            >
+              <div class="px-4 py-5 flex-auto">
+                <h1 class="text-4xl font-semibold mb-8">
+                  Instalación y configuración del Servidor DNS
+                </h1>
+                <p class="text-left text-2xl font-semibold">💥 Paso 1</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Ahora se procede a agregar un nuevo rol seleccionando en la
+                  opción <strong>Servidor DNS</strong> que nos permitirá hacer
+                  una traducción de nombres de dominio a direcciones IPv4 en
+                  este caso y viceversa
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 1.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 2</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Siguiendos todos los pasos para la instalación y configuración
+                  de este rol tendremos instalado nuestro rol para el servidor
+                  DNS, en el cual se procede a configurar.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 2.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 3</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Windows Server nos permite para el servidor DNS asignar
+                  distintas zonas en las cuales va a tener información de los
+                  dominios que se van a traducir. Por lo tanto se crea una zona
+                  directa la cual va a tomar la dirección IP que se le asigne y
+                  va a trabajar sobre ella para traducir los nombres de dominio.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 3.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 4</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Vamos a crear una zona principal puesto que estamos trabajando
+                  directamente en el servidor que ofrece el servicio
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 4.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 5</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Ahora asignamos el nombre de la zona con el fin de
+                  identificarla. Cabe resaltar que este nombre no es el nombre
+                  propio del servidor DNS
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 5.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 6</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Windows Server permite trabajar sobre IPv4 o IPv6. Para
+                  nuestro caso usaremos direcciones IPv4
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 6.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 7</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  En esta parte asignaremos la dirección IP que trabaja sobre
+                  esa zona. En este caso será la misma dirección de red que
+                  trabaja el host. <strong>192.168.100.X</strong>. Esta
+                  dirección se identificará comunmente como el
+                  <strong>inverso</strong> de la dirección ip de red, como se
+                  aprecia en la zona inferior de la imagen, creando así una
+                  <strong>zona de búsqueda inversa</strong>.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 8.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 8</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Aquí se aprecia que fue creada la zona de búsqueda directa con
+                  el nombre asignado
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 9 directa.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 9</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Automáticamente se crea la zona de búsqueda inversa con la
+                  dirección IP de la parte de red que fue asignada.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 9 inversa.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 10</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Ahora vamos a crear los host que son las direcciones IP que
+                  son traducidas hacia nuestro nombre de dominio, por lo que si
+                  en el navegador digitamos el nombre de dominio, el servidor
+                  DNS nos traducirá ese dominio a una dirección IP a la que se
+                  conectará nuestro cliente
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 10.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 11</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Aquí podemos ver los distintos host que se han creado. En este
+                  caso, para la IP 192.168.100.102. También dispondremos hacia
+                  el nombre de dominio el acceso por www para simular un nombre
+                  de dominio típico de internet
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 11.PNG"
+                  alt=""
+                />
+                <p class="text-left text-2xl font-semibold">💥 Paso 12</p>
+                <p class="text-left my-5 ml-10 text-lg">
+                  Por último, se realiza el test directamente en la consola de
+                  comandos del servidor, para verificar la resolución de los
+                  nombres de dominio e IP's. El comando
+                  <span class="bg-gray-200 p-1 font-semibold rounded-3xl"
+                    >nslookup</span
+                  >, tanto para la dirección IP como para el nombre de dominio.
+                  De esta manera, estaría configurado, instalado y montado
+                  nuestro servidor DNS.
+                </p>
+                <img
+                  class="mx-auto my-5 w-1/2 h-1/2"
+                  src="./img/DNS/DNS 12.PNG"
+                  alt=""
+                />
 
-                        </div>
-                    </div>
-
-                </div>
+                <p class="text-left my-5 ml-10 text-4xl">🥳</p>
+              </div>
             </div>
+          </div>
         </div>
-
+      </div>
     </section>
-    
 
     <div class="fixed z-30 bottom-0 right-0 mr-6 mb-6">
-        <a id="back2Top" href="#" class="text-black bg-blue-800 bg-opacity-50 rounded-md">
-            <span class="hidden">Back to Top</span>
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" class="h-10 w-10">
-                <path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
-            </svg>
-        </a>
+      <a
+        id="back2Top"
+        href="#"
+        class="text-black bg-blue-800 bg-opacity-50 rounded-md"
+      >
+        <span class="hidden">Back to Top</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          viewBox="0 0 24 24"
+          class="h-10 w-10"
+        >
+          <path
+            fill="currentColor"
+            d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+          />
+        </svg>
+      </a>
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
